@@ -34,7 +34,7 @@ export const AreaHeader = styled.div`
                 color: #fff;
 
                 &:hover{
-                    color: #972038;
+                    color: #707a80;
                 }
             }
         }

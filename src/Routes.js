@@ -1,20 +1,18 @@
 import React from "react";
-import { Switch, Route } from 'react-router-dom';
+import {Route, Routes } from 'react-router-dom';
 import Home from './pages/Home';
 import Configuracao from './pages/Configuracao';
 
 export default function Myfunc() {
     return (
-        <Switch>
-            <Route exact path="/">
-                <Home/>
-            </Route>
-            <Route exact path="/configuracao">
-                <Configuracao/>
-            </Route>
-            <Route exact path="/sobre">
-                Página de Sobre
-            </Route>
-        </Switch>
+        // <BrowserRouter>
+        <Routes>
+                <Route exact path="/" element={<Home />} />
+                <Route exact path="/configuracao" element={<Configuracao />} />
+                {/* <Route exact path="/sobre">
+                    <div>Página de Sobre</div>
+                </Route> */}
+            </Routes>
+        // </BrowserRouter>
     );
 }
