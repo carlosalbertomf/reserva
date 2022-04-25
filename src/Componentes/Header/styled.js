@@ -22,6 +22,8 @@ export const AreaHeader = styled.div`
     }
     
     nav{
+        display: flex;
+        
         ul{
             display: flex;
         }
@@ -37,6 +39,32 @@ export const AreaHeader = styled.div`
                     color: #707a80;
                 }
             }
+        }
+
+        .avatar{
+            display: flex;
+            align-items: center;
+
+            img{
+                width:35px;
+                border-radius: 20px;
+                margin-top: -10px;
+                margin-left: 20px;
+                margin-right: 8px;
+                cursor: pointer;
+            }
+
+            label{
+                font-size: 16px;
+                cursor: pointer;
+                color: #fff;
+                margin-top: -10px;
+            }
+
+            @media screen and (max-widht: 600px){
+                display: none;
+            }
+
         }
     }
     
